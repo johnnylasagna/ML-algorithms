@@ -1,10 +1,11 @@
 import numpy as np
 
-class LinearRegression:
+class LogisticRegression:
 
     def __init__(self, lr, n_iter):
         self.lr = lr
-        self.n_iter = n_iter  
+        self.n_iter = n_iter
+
     
     def fit(self, X, y):
         self.w = np.zeros(X.shape[1])
@@ -18,9 +19,12 @@ class LinearRegression:
             _b = self.b - self.lr * np.mean(error)
             self.w = _w
             self.b = _b
-            cost = np.dot(error,error)
-            self.costs.append(cost)
+            self.costs.append(self.cost(y, y_predict))
+            
+    def cost(self, y, y_predict):
+        return -1 * np.sum(np.dot(y, np.log(y_predict)) + np.dot(1-y, np.log(1-y_predict))) / y.shape[0]
 
     def predict(self, x):
-        return np.dot(self.w, x) + self.b
-            
+        z = np.dot(self.w,x) + self.b
+        fz = 1 / (1 + np.exp(-z))
+        return fz
