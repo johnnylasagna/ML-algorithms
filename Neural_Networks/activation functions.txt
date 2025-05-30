@@ -1,0 +1,9 @@
+OUTPUT:
+
+binary classification : Sigmoid
+regression            : Linear activation function
+regression (positive) : ReLU
+
+HIDDEN LAYER:
+
+common                : ReLU
