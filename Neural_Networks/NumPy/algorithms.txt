@@ -1,0 +1,5 @@
+Basic Perceptron
+Sequential nodes
+sigmoid
+ReLU
+Linear

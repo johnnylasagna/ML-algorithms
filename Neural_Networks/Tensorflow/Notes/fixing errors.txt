@@ -1,0 +1,7 @@
+high variance - more training examples, fewer features, increasing regularization parameter
+high bias - additional features, adding polynomial features, decreasing regularization parameter
+
+Data augmentation: distorting, adding errors to data to further train model
+eg. adding noise to speech recognition clip
+    distorting images
+
