@@ -1,0 +1,11 @@
+Decision trees -
+
+Work better on structured data
+Faster
+Human interpretable 
+
+Neural networks -
+
+Works on structured and unstructred data
+Slower
+Can do transfer learning
