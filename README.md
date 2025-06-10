@@ -10,3 +10,4 @@ Also contains implementations using TensorFlow.
 - Logistic regression
 - Binary classification
 - Neural Networks (incomplete)
+- Decision Trees
